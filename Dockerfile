@@ -1,5 +1,5 @@
 FROM amazoncorretto:19.0.2-alpine3.17
-LABEL maintainer="Jose Silva"
+LABEL maintainer="Kennedy Dourado"
 WORKDIR /opt/app
 COPY target/*.jar app.jar
 ENTRYPOINT ["java", "-Dspring.profiles.active=docker", "-jar", "app.jar"]
